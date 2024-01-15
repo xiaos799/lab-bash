@@ -1,0 +1,159 @@
+Last login: Sun Jan 14 22:56:38 on ttys000
+(base) giselles@Giselles-MacBook-Air ~ % cd Desktop                            
+(base) giselles@Giselles-MacBook-Air Desktop % cd ../
+(base) giselles@Giselles-MacBook-Air ~ % echo hello!
+hello!
+(base) giselles@Giselles-MacBook-Air ~ % echo Hello World
+Hello World
+(base) giselles@Giselles-MacBook-Air ~ % cd Desktop
+(base) giselles@Giselles-MacBook-Air Desktop % cd lab-bash
+(base) giselles@Giselles-MacBook-Air lab-bash % mkdir new_dir
+(base) giselles@Giselles-MacBook-Air lab-bash % ls
+Terminal Saved Output.txt	lorem-copy
+exercices			new_dir
+inputs				outputs
+lorem				readme.md
+(base) giselles@Giselles-MacBook-Air lab-bash % rm new_dir
+rm: new_dir: is a directory
+(base) giselles@Giselles-MacBook-Air lab-bash % ls
+Terminal Saved Output.txt	lorem-copy
+exercices			new_dir
+inputs				outputs
+lorem				readme.md
+(base) giselles@Giselles-MacBook-Air lab-bash % rmdir new_dir
+(base) giselles@Giselles-MacBook-Air lab-bash % ls
+Terminal Saved Output.txt	lorem-copy
+exercices			outputs
+inputs				readme.md
+lorem
+(base) giselles@Giselles-MacBook-Air lab-bash % cd lorem
+(base) giselles@Giselles-MacBook-Air lorem % cp sed.txt lorem-copy/sed.txt
+cp: lorem-copy/sed.txt: No such file or directory
+(base) giselles@Giselles-MacBook-Air lorem % cp sed.txt lab_bash/lorem-copy 
+cp: lab_bash/lorem-copy: No such file or directory
+(base) giselles@Giselles-MacBook-Air lorem % cp sed.txt lab_bash/lorem-copy/sed.txt
+cp: lab_bash/lorem-copy/sed.txt: No such file or directory
+(base) giselles@Giselles-MacBook-Air lorem % cd ../                        
+(base) giselles@Giselles-MacBook-Air lab-bash % cp lorem/sed.txt lorem-copy 
+(base) giselles@Giselles-MacBook-Air lab-bash % cd lorem-copy
+(base) giselles@Giselles-MacBook-Air lorem-copy % ls
+dummy_file.txt	sed.txt
+(base) giselles@Giselles-MacBook-Air lorem-copy % cd ../
+(base) giselles@Giselles-MacBook-Air lab-bash % cp lorem/at.txt; lorem/lorem.txt lorem-copy
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpSsvXx] source_file ... target_directory
+lorem/lorem.txt: line 1: Lorem: command not found
+lorem/lorem.txt: line 2: Ut: command not found
+lorem/lorem.txt: line 3: Duis: command not found
+lorem/lorem.txt: line 4: Excepteur: command not found
+(base) giselles@Giselles-MacBook-Air lab-bash % cp lorem/at.txt lorem/lorem.txt lorem-copy 
+(base) giselles@Giselles-MacBook-Air lab-bash % cd lorem-copy
+(base) giselles@Giselles-MacBook-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) giselles@Giselles-MacBook-Air lorem-copy % cd ../
+(base) giselles@Giselles-MacBook-Air lab-bash % cd lorem
+(base) giselles@Giselles-MacBook-Air lorem % cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) giselles@Giselles-MacBook-Air lorem % cat at.txt lorem.txt                                     
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.%                                                                                               (base) gis(base) g(base) g(base) giselles@Gise(base) gis(base) giselle(base) gis(bas(base) g(b(b(b(b(b(b(b(b(b(base) giselles@Giselles-MacBook-Air lorem % cd ../
+(base) giselles@Giselles-MacBook-Air lab-bash % cd lorem-copy
+(base) giselles@Giselles-MacBook-Air lorem-copy % ls
+at.txt		dummy_file.txt	lorem.txt	sed.txt
+(base) giselles@Giselles-MacBook-Air lorem-copy % head -3 sed.txt 
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+(base) giselles@Giselles-MacBook-Air lorem-copy % tail -3 sed.txt 
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+(base) giselles@Giselles-MacBook-Air lorem-copy % nano sed.txt
+(base) giselles@Giselles-MacBook-Air lorem-copy % tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus Homo homini lupus.
+(base) giselles@Giselles-MacBook-Air lorem-copy % cd ../
+(base) giselles@Giselles-MacBook-Air lab-bash % cd lorem
+(base) giselles@Giselles-MacBook-Air lorem % sed -i '' 's/et/ET/' at.txt
+(base) giselles@Giselles-MacBook-Air lorem % cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non 
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga. 
+Et harum quidem rerum facilis est ET expedita distinctio. 
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod 
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. 
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET 
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+(base) giselles@Giselles-MacBook-Air lorem % id -un
+giselles
+(base) giselles@Giselles-MacBook-Air lorem % pwd
+/Users/giselles/Desktop/lab-bash/lorem
+(base) giselles@Giselles-MacBook-Air lorem % ls *.txt
+at.txt		lorem.txt	sed.txt
+(base) giselles@Giselles-MacBook-Air lorem % wc -l sed.txt
+       9 sed.txt
+(base) giselles@Giselles-MacBook-Air lorem % cat sed.txt | wc -l
+       9
+(base) giselles@Giselles-MacBook-Air lorem % cd ../
+(base) giselles@Giselles-MacBook-Air lab-bash % cd ../
+(base) giselles@Giselles-MacBook-Air Desktop % cd ../
+(base) giselles@Giselles-MacBook-Air ~ % ls -dq lorem* | wc -l 
+zsh: no matches found: lorem*
+       0
+(base) giselles@Giselles-MacBook-Air ~ % ls lorem* | wc -l  
+zsh: no matches found: lorem*
+       0
+(base) giselles@Giselles-MacBook-Air ~ % ls -q lorem* | wc -l  
+zsh: no matches found: lorem*
+       0
+(base) giselles@Giselles-MacBook-Air ~ % cd Desktop
+(base) giselles@Giselles-MacBook-Air Desktop % ls lorem* | wc -l 
+zsh: no matches found: lorem*
+       0
+(base) giselles@Giselles-MacBook-Air Desktop % cd lab-bash
+(base) giselles@Giselles-MacBook-Air lab-bash % ls lorem* | wc -l 
+      11
+(base) giselles@Giselles-MacBook-Air lab-bash % find . -name "lorem*" | wc -l
+       4
+(base) giselles@Giselles-MacBook-Air lab-bash % read var
+Xiao
+(base) giselles@Giselles-MacBook-Air lab-bash % echo $var
+Xiao
+(base) giselles@Giselles-MacBook-Air lab-bash % mkdir var.txt
+(base) giselles@Giselles-MacBook-Air lab-bash % ls
+Terminal Saved Output.txt	inputs				lorem-copy			readme.md
+exercices			lorem				outputs				var.txt
+(base) giselles@Giselles-MacBook-Air lab-bash % rm var.txt
+rm: var.txt: is a directory
+(base) giselles@Giselles-MacBook-Air lab-bash % mkdir $var
+(base) giselles@Giselles-MacBook-Air lab-bash % ls
+Terminal Saved Output.txt	exercices			lorem				outputs
+Xiao				inputs				lorem-copy			readme.md
+(base) giselles@Giselles-MacBook-Air lab-bash % rm -r $var
+(base) giselles@Giselles-MacBook-Air lab-bash % ls
+Terminal Saved Output.txt	inputs				lorem-copy			readme.md
+exercices			lorem				outputs
+(base) giselles@Giselles-MacBook-Air lab-bash % 
